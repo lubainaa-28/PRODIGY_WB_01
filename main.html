@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <link rel="stylesheet" href="look.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navigation">
+        <div class="nav-container">
+            <div class="nav-content">
+
+                <!-- Logo -->
+                <button id="logo" class="logo">Antique Weave</button>
+
+                <!-- Desktop Menu -->
+                <ul class="nav-menu">
+                    <li>
+                        <button class="nav-item active" data-page="home">
+                            Home
+                            <span class="nav-underline"></span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav-item" data-page="contact">
+                            Contact
+                            <span class="nav-underline"></span>
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- CTA Button -->
+                <button class="cta-button">Get Started</button>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-toggle" class="mobile-menu-toggle">
+                    <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="close-icon hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu hidden">
+                <ul>
+                    <li>
+                        <button class="mobile-nav-item active" data-page="home">Home</button>
+                    </li>
+					
+                    <li>
+                        <button class="mobile-nav-item" data-page="contact">Contact</button>
+                    </li>
+
+                    <li>
+                        <button class="mobile-cta-button">Get Started</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <!-- Home Page -->
+        <div id="home-page" class="page active">
+
+            <div class="animated-gradient-bg"></div>
+
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h1 class="hero-title fade-in-up">Welcome to Antique Weave</h1>
+                    <p class="hero-subtitle fade-in-up delay-1">where timeless craftsmanship meets curated style.</p>
+                    <button class="hero-button fade-in-up delay-2">Explore More</button>
+                </div>
+
+                <div class="bg-elements">
+                    <div class="bg-blob blob-1"></div>
+                    <div class="bg-blob blob-2"></div>
+                </div>
+
+                <div class="floating-icon icon-1"></div>
+                <div class="floating-icon icon-2"></div>
+                <div class="floating-icon icon-3"></div>
+                <div class="floating-icon icon-4"></div>
+            </section>
+
+            <!-- About Us Section -->
+            <section class="about-section">
+                <div class="about-container">
+                    <h2 class="about-title scroll-fade-in">About Us</h2>
+
+                    <div class="about-card scroll-fade-in">
+                        <p class="about-text">
+                            At Antique Weave, we believe that a home should reflect stories, memories, and timeless beauty.
+                        </p>
+                        <p class="about-text">
+                            Our journey began with a simple idea — to bring the charm of traditional craftsmanship into modern living.
+                        </p>
+                        <p class="about-text">
+                            We are committed to quality, sustainability, and designs that stand the test of time.
+                        </p>
+                    </div>
+
+                    <div class="feature-grid">
+                        <div class="feature-card scroll-fade-in">
+                            <h3 class="feature-title">Handcrafted Quality</h3>
+                            <p class="feature-description">Carefully crafted by skilled artisans.</p>
+                        </div>
+
+                        <div class="feature-card scroll-fade-in">
+                            <h3 class="feature-title">Timeless Designs</h3>
+                            <p class="feature-description">Elegant pieces that never go out of style.</p>
+                        </div>
+
+                        <div class="feature-card scroll-fade-in">
+                            <h3 class="feature-title">Fast & Safe Delivery</h3>
+                            <p class="feature-description">Packed with care and delivered securely.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact-page" class="page">
+
+            <div class="animated-gradient-bg contact-bg"></div>
+
+            <section class="contact-section">
+                <div class="contact-container">
+                    <h2 class="contact-title page-fade-in">Get In Touch</h2>
+                    <p class="contact-subtitle page-fade-in">Ready to start your next project? Let's talk!</p>
+
+                    <form class="contact-form page-fade-in">
+                        <input type="text" placeholder="Your Name" class="form-input" required>
+                        <input type="email" placeholder="Your Email" class="form-input" required>
+                        <textarea placeholder="Your Message" rows="5" class="form-textarea" required></textarea>
+                        <button type="submit" class="form-button">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-text">© 2025 Lubaina. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="interact.js"></script>
+</body>
+</html>
